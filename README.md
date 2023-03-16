@@ -35,7 +35,3 @@ To view the website, open the `index.html` file in your web browser. From there,
 ## Contributing
 
 If you would like to contribute to this website, you can do so by submitting a pull request. Please ensure that your contributions align with the overall theme and purpose of the site.
-
-## License
-
-This website is licensed under the [MIT License](LICENSE).
