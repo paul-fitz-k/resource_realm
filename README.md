@@ -25,7 +25,7 @@ This website serves as a collection of links and resources that I find useful fo
 
 To run this website on your local machine, you can clone this repository using Git:
 
-git clone https://github.com/your-username/your-repository.git
+git clone https://github.com/paul-fitz-k/resource_realm.git
 
 
 ## Usage
