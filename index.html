@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <title>Resource Realm</title>
+        <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="styles.css">
+    </head>
+    <body>
+        <div class="container">
+            <div class="nav-wrapper">
+                <div class="left-side">
+                    <div class="nav-link-wrapper active-nav-link">
+                        <a href="index.html">Home</a>
+                    </div>
+                    
+                    <div class="nav-link-wrapper">
+                        <a href="about.html">About</a>
+                    </div>
+                    <div class="nav-link-wrapper">
+                        <a href="videos.html">Videos</a>
+                    </div>
+                    <div class="nav-link-wrapper">
+                        <a href="scientific.html">Papers</a>
+                    </div>
+                    <div class="nav-link-wrapper">
+                        <a href="github.html">Repositories</a>
+                    </div>
+                    <div class="nav-link-wrapper">
+                        <a href="blogs.html">Blogs</a>
+                    </div>
+                    <div class="nav-link-wrapper">
+                        <a href="tools.html">Tools</a>
+                    </div>
+                    <div class="nav-link-wrapper">
+                        <a href="resources.html">Other</a>
+                    </div>
+                </div>
+
+                <div class="right-side">
+                    <div class="brand">
+                        <div>PAUL KENNEDY</div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="content-wrapper">
+                <div class="portfolio-items-wrapper">
+
+                    <div class="portfolio-item-wrapper">
+                        <div class="portfolio-img-background" style="background-image: url(images/portfolio2.jpg)"></div>
+
+                        <div class="img-text-wrapper">
+                            <div class="logo-wrapper">
+                                <img src="images/logos/video.jpg" alt="">
+                            </div>
+
+                            <div class="links">
+                                <a style="text-decoration:none" href="videos.html">Videos</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="portfolio-item-wrapper">
+                        <div class="portfolio-img-background" style="background-image: url(images/portfolio11.jpg)"></div>
+
+                        <div class="img-text-wrapper">
+                            <div class="logo-wrapper">
+                                <img src="images/logos/edutechional.png" alt="">
+                            </div>
+
+                            <div class="links">
+                                <a style="text-decoration:none" href="scientific.html">Papers</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="portfolio-item-wrapper">
+                        <div class="portfolio-img-background" style="background-image: url(images/portfolio9.jpg);"></div>
+
+                        <div class="img-text-wrapper">
+                            <div class="logo-wrapper">
+                                <img src="images/logos/github.png" alt="">
+                            </div>
+
+                            <div class="links">
+                                <a style="text-decoration:none" href="github.html">Repositories</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="portfolio-item-wrapper">
+                        <div class="portfolio-img-background" style="background-image: url(images/portfolio7.jpg);"></div>
+
+                        <div class="img-text-wrapper">
+                            <div class="logo-wrapper">
+                                <img src="images/logos/devcamp.png" alt="">
+                            </div>
+
+                            <div class="links">
+                                <a style="text-decoration:none" href="blogs.html">Blogs</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="portfolio-item-wrapper">
+                        <div class="portfolio-img-background" style="background-image: url(images/portfolio4.jpg);"></div>
+
+                        <div class="img-text-wrapper">
+                            <div class="logo-wrapper">
+                                <img src="images/logos/devtrunk.png" alt="">
+                            </div>
+
+                            <div class="links">
+                                <a style="text-decoration:none" href="tools.html">Tools</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="portfolio-item-wrapper">
+                        <div class="portfolio-img-background" style="background-image: url(images/portfolio6.jpg);"></div>
+
+                        <div class="img-text-wrapper">
+                            <div class="logo-wrapper">
+                                <img src="images/logos/dailysmarty.png" alt="">
+                            </div>
+
+                            <div class="links">
+                                <a style="text-decoration:none" href="resources.html">Resources</a>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+        
+        <footer>
+            <div class="container">
+              <div class="row">
+                <div class="col-sm-6">
+                  <p>&copy; 2023 - All rights reserved</p>
+                </div>
+                <div class="col-sm-6">
+                  <ul class="social">
+                    <li><a href="https://www.linkedin.com/in/paul-k-2583a8b6"><i class="fa fa-linkedin"></i>LinkedIn</a></li>
+                    <li><a href="mailto:paul.pk.kennedy12@gmail.com">Email</a></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+        </footer>
+
+    </body>
+<script>
+    const portfolioItems = document.querySelectorAll('.portfolio-item-wrapper')
+
+    portfolioItems.forEach(portfolioItem => {
+        portfolioItem.addEventListener('mouseover', () => {
+            portfolioItem.childNodes[1].classList.add('img-darken')
+        })
+        portfolioItem.addEventListener('mouseout', () => {
+            portfolioItem.childNodes[1].classList.remove('img-darken')
+        })
+    })
+</script>
+</html>
